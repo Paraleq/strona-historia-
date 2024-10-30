@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Pistoletów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontener">
+        <div class="boczne-menu">
+            <div class="ikona-menu">
+                <div class="hamburger"></div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#"><img src="ikony/historia.png" alt="Historia" class="ikona"></a>
+                    <ul class="submenu">
+                        <li><a href="podstrona/historia/sredniowiecze.html">Od starożytności do 1500</a></li>
+                        <li><a href="podstrona/historia/1500-1800.html">1500-1800</a></li>
+                        <li><a href="podstrona/historia/1800-2100.html">1800-2100</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="ikony/kraje.png" alt="Kraje" class="ikona"></a>
+                    <ul class="submenu">
+                        <li><a href="podstrona/kraje/usa.html">USA</a></li>
+                        <li><a href="podstrona/kraje/rosja.html">Rosja</a></li>
+                        <li><a href="podstrona/kraje/niemcy.html">Niemcy</a></li>
+                        <li><a href="podstrona/kraje/francja.html">Francja</a></li>
+                        <li><a href="podstrona/kraje/włochy.html">Włochy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html"><img src="ikony/glowna.png" alt="Strona Główna" class="ikona"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="ikony/ludzie.png" alt="Wynalazcy" class="ikona"></a>
+                    <ul class="submenu">
+                        <li><a href="#">Samuel Colt</a></li>
+                        <li><a href="#">John Browning</a></li>
+                        <li><a href="#">Nikolay Makarov</a></li>
+                        <li><a href="#">Carl Walther</a></li>
+                        <li><a href="#">Tullio Marengoni</a></li>
+                        <li><a href="#">Gaston Glock</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><img src="ikony/rodzaje.png" alt="Rodzaje Pistoletów" class="ikona"></a>
+                    <ul class="submenu">
+                        <li><a href="#">Rewolwery</a></li>
+                        <li><a href="#">Pistolety Samopowtarzalne</a></li>
+                        <li><a href="#">Pistolety Automatyczne</a></li>
+                        <li><a href="#">Pistolety Jednostrzałowe</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="zawartosc">
+            <header>
+                <div class="tytul">
+                    <span class="podtytul">HISTORIA</span>
+                    <h1>BRONI KRÓTKIEJ</h1>
+                </div>
+            </header>
+
+       <div class="glowne-przyciski">
+           <div class="kontener-przyciskow">
+               <button class="przycisk-wybierz" onclick="location.href='podstrona/historia/sredniowiecze.html'">
+                   <img src="ikony/strzalkal.png" class="ikona-lewa"> POCZĄTKI
+               </button>
+        
+               <button class="przycisk-wiecej" onclick="location.href='podstrona/historia/1800-2100.html'">
+                   PRZYSZŁOŚĆ <img src="ikony/strzalkap.png" class="ikona-prawa">
+               </button>
+           </div>
+       </div>
+
+
+            <section class="ogolnik">
+                <div class="ogolnik-obrazek">
+                    <img src="obrazy/pistolet.png" alt="Ogólny obraz pistoletu">
+                </div>
+                <div class="ogolnik-tekst">
+                    <h2>Broń krótka, Pistolety</h2>
+                    <p>Pistolety, będące jednym z najbardziej znanych typów broni palnej, mają bogatą historię sięgającą setek lat. Ich ewolucja zaczęła się od prymitywnych mechanizmów zapłonowych, aż po nowoczesne, wielostrzałowe konstrukcje.</p>
+                    <p>Początkowo używane głównie przez armię, z czasem pistolety stały się popularne również wśród cywilów, a ich produkcja rozwinęła się na całym świecie.</p>
+                </div>
+            </section>
+
+<section class="karty-faktow">
+    <div class="karta" onclick="toggleCard(this)">
+        <div class="karta-przod">
+            <h3>Fakt 1</h3>
+            <p>Czy wiedziałeś że?...</p>
+        </div>
+        <div class="karta-tyl">
+            <p>Pistolety pojawiły się w XV wieku jako prymitywne ręczne działa.</p>
+        </div>
+    </div>
+    
+    <div class="karta" onclick="toggleCard(this)">
+        <div class="karta-przod">
+            <h3>Fakt 2</h3>
+            <p>Czy słyszałeś o tym, że...?</p>
+        </div>
+        <div class="karta-tyl">
+            <p>Samuel Colt opatentował pierwszy masowo produkowany rewolwer w 1836 roku.</p>
+        </div>
+    </div>
+    
+    <div class="karta" onclick="toggleCard(this)">
+        <div class="karta-przod">
+            <h3>Fakt 3</h3>
+            <p>Czy masz pojęcie, że...?</p>
+        </div>
+        <div class="karta-tyl">
+            <p>Rewolwery były popularne w XIX wieku, zwłaszcza na Dzikim Zachodzie.</p>
+        </div>
+    </div>
+    
+    <div class="karta" onclick="toggleCard(this)">
+        <div class="karta-przod">
+            <h3>Fakt 4</h3>
+            <p>Czy byłeś świadomy, że...?</p>
+        </div>
+        <div class="karta-tyl">
+            <p>John Browning stworzył jedne z najpopularniejszych pistoletów w historii.</p>
+        </div>
+    </div>
+    
+    <div class="karta" onclick="toggleCard(this)">
+        <div class="karta-przod">
+            <h3>Fakt 5</h3>
+            <p>Czy przyszło ci na myśl, że...?</p>
+        </div>
+        <div class="karta-tyl">
+            <p>Pistolet Glock, wynaleziony przez Gastona Glocka, jest używany przez służby na całym świecie.</p>
+        </div>
+    </div>
+</section>
+
+       <div class="stopka">
+           <p>Twórcy strony: Antoni Nowak, Szymon Ewiak, Kacper Szeląg, Maciej Wieczorek z 4Ti</p>
+       </div>
+
+        </div>
+    </div>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>

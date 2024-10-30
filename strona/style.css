@@ -1,0 +1,322 @@
+/* Ogólne ustawienia */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.kontener {
+    display: flex;
+}
+
+/* Stylizacja bocznego menu */
+.boczne-menu {
+    background-color: #2e2e2e;
+    color: white;
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Dodaj z-index */
+}
+
+.ikona-menu {
+    margin-bottom: 20px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu > li {
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.ikona {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.menu > li:hover .ikona {
+    transform: scale(1.2); /* Powiększenie o 20% */
+}
+
+.submenu {
+    list-style-type: none;
+    padding-left: 0;
+    display: none;
+    background-color: #444;
+    position: absolute;
+    left: 80px;
+    top: 0;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #f0d800; /* Cienka linia między elementami */
+}
+
+.submenu li:last-child {
+    border-bottom: none; /* Usunięcie linii z ostatniego elementu */
+    border-radius: 0 0 8px 8px; /* Zaokrąglone dolne rogi */
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #f0d800;
+}
+
+/* Stylizacja głównej części strony */
+.zawartosc {
+    margin-left: 80px;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    background-color: #f0d800;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.tytul {
+    position: relative;
+}
+
+.podtytul {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.glowne-przyciski {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.kontener-przyciskow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.przycisk-wybierz {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 0px;
+    position: relative;
+    left: -40px;
+    transition: all 0.3s;
+}
+
+.przycisk-wybierz:hover {
+    transform: translateY(-6px) scale(1.2);
+}
+
+.przycisk-wiecej {
+    background-color: #f0d800;
+    color: #000;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    right: -40px;
+    transition: all 0.3s;
+}
+
+.przycisk-wiecej:hover {
+    transform: translateY(6px) scale(1.2);
+}
+
+.ikona-lewa, .ikona-prawa {
+    width: 30px; /* Dopasuj rozmiar ikony */
+    height: 30px;
+    vertical-align: middle;
+}
+
+.ikona-lewa {
+    margin-right: 5px; /* Odstęp od tekstu */
+}
+
+.ikona-prawa {
+    margin-left: 5px; /* Odstęp od tekstu */
+}
+
+/* Sekcja ogólnika */
+.ogolnik {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.ogolnik-obrazek {
+    flex: 1;
+}
+
+.ogolnik-obrazek img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+.ogolnik-tekst {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.ogolnik-tekst h2 {
+    font-size: 30px;
+}
+
+.ogolnik-tekst p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.stopka {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+.stopka p {
+    margin: 5px 0;
+}
+
+/* Stylizacja sekcji Kart Faktów */
+.karty-faktow {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.karta {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.karta-przod, .karta-tyl {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.karta-przod {
+    background-color: #f0d800;
+    color: #000;
+}
+
+.karta-tyl {
+    background-color: #2e2e2e;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.karta {
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.karta.aktywna .karta-przod {
+    transform: rotateY(180deg);
+}
+
+.karta.aktywna .karta-tyl {
+    transform: rotateY(0deg);
+}
+
+
+/* Ustawienia responsywności */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .podtytul {
+        font-size: 16px;
+    }
+
+    .przycisk-wybierz, .przycisk-wiecej {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .strzalki {
+        margin-left: 20px;
+    }
+
+    .ogolnik {
+        flex-direction: column;
+    }
+
+    .ogolnik-obrazek, .ogolnik-tekst {
+        padding: 0;
+    }
+
+    .ogolnik-tekst {
+        margin-top: 20px;
+    }
+}
